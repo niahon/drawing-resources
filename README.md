@@ -1,2 +1,12 @@
 # drawing-resources
  A site for drawing resources
+
+
+
+-FUNDAMENTALS
+-GUIDE
+-COURSES
+-MATERIALS
+-IMAGE REFERENCES
+-YOUTUBE CHANNELS
+-TIPS
