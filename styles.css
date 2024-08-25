@@ -1,3 +1,7 @@
+:root {
+    --main-bg-color: #e1e3e6;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -14,7 +18,6 @@ html {
 h2 {
     font-size: 28px;
     border-bottom: 2px solid blue;
-    margin-top: 3rem;
 }
 
 img {
@@ -22,12 +25,16 @@ img {
     display: block;
 }
 
+body {
+    background-color: var(--main-bg-color);
+}
 
 nav {
     display: grid;
     padding: 1rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 0.75fr;
     grid-template-rows: 1fr auto;
+    background-color: lightblue;
 }
     #site-logo a {
         font-size: 30px;
@@ -58,13 +65,17 @@ nav {
                 display: block;
                 padding: 1.2rem 0;
                 border-bottom: 1px solid black;
+                color: black;
             }
             .menu-items a:hover {
                 background-color: pink;
+                color: blue;
             }
 
 main {
-    margin: 0 1rem;
+    margin: 3rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
 }
     main p {
     margin: 1rem 0; 
@@ -83,3 +94,53 @@ main {
             float: right;
             margin-left: 1rem;
         }
+    .ads {
+        border-top: 1px solid black;
+    }
+        .ads img{
+            margin: 1rem auto;
+        }
+
+
+@media (min-width: 850px) {
+    
+    nav {
+        display: flex;
+        padding: 0 2rem;
+        justify-content: space-between;
+    }
+        p {
+            align-self: center;
+            flex: 1;
+        }
+        .burger {
+            display: none;
+        }
+        ul.menu-items {
+            display: flex;
+            margin-top: 0;
+            gap: 2rem;
+        }
+        ul.menu-items a {
+            border: none;
+            padding: 1rem;
+        }
+    main {
+        flex-direction: row;
+        margin: 3rem 8em;
+        justify-content: space-around;
+    }
+        .content {
+            width: 70%;
+        }
+
+        .fundamental h2,
+        .aside {
+            border: none;
+        }
+
+    footer {
+        border-top: 1px solid black;
+        padding: 1rem;
+    }
+}
