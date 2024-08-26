@@ -17,6 +17,11 @@ html {
 
 h2 {
     border-bottom: 2px solid blue;
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 22px;
 }
 
 img {
@@ -29,6 +34,8 @@ body {
     background-color: var(--main-bg-color);
 }
 
+
+/* --------nav-------- */
 nav {
     display: grid;
     padding: 1rem;
@@ -72,7 +79,7 @@ nav {
                 color: blue;
             }
 
-
+/* -------- main -------- */
     main p {
     margin: 1rem 0; 
     }
@@ -83,30 +90,34 @@ nav {
         background-color: aliceblue;
         padding: 3rem 1rem 0 1rem;
     }
+        .flex-container h3 {
+            padding: 0.2rem 0 0.2rem 0.4rem;
+        }
+        
+    .content img {
+        padding: 1rem 0.8rem 0.6rem;
+
+    }
 
     /* fundamentals.html */
 
         .fundamental {
             margin-bottom: 3rem;
         }
-            .fundamental h2 {
+            .flex-container h3 {
                 background-color: lightblue;
             }
 
     /* courses.html */
 
     .course {
-        margin-top: 3em;
-        padding-bottom: 3rem;
-        border-bottom: 1px solid blue;
+        padding: 2rem 0 0;
     }
-        .course:nth-of-type(even) img {
-            float: left;
-            margin-right: 1rem;
-        }
         .course:nth-of-type(odd) img {
             float: right;
-            margin-left: 1rem;
+        }
+        .course:nth-of-type(even) img {
+            float: left;
         }
     .ads {
         border-top: 1px solid black;
@@ -139,6 +150,7 @@ nav {
             border: none;
             padding: 1rem;
         }
+        
     .flex-container {
         flex-direction: row;
         margin: 0 4rem;
@@ -151,17 +163,18 @@ nav {
         }
             .content p,
             .content img {
-                padding-left: 3rem;
+                padding-left: 0.2rem;
             }
-        .fundamental h2 {
-            padding-left: 1.5rem;
-            margin-top: 1rem;
-        }
 
-        .fundamental h2,
-        .aside {
-            border: none;
-        }
+            .fundamental h2 {
+                padding-left: 1.5rem;
+                margin-top: 1rem;
+            }
+            .fundamental h2,
+            .aside {
+                border: none;
+            }
+   
 
     footer {
         border-top: 1px solid black;
