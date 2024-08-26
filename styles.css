@@ -72,21 +72,29 @@ nav {
                 color: blue;
             }
 
-main {
-    margin: 3rem 1rem 0 1rem;
-    display: flex;
-    flex-direction: column;
-}
+
     main p {
     margin: 1rem 0; 
     }
 
-    .fundamental {
-        margin-bottom: 3rem;
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+        padding: 3rem 1rem 0 1rem;
     }
-        .fundamental h2 {
-            background-color: lightblue;
+
+    /* fundamentals.html */
+
+        .fundamental {
+            margin-bottom: 3rem;
         }
+            .fundamental h2 {
+                background-color: lightblue;
+            }
+
+    /* courses.html */
+
     .course {
         margin-top: 3em;
         padding-bottom: 3rem;
@@ -112,7 +120,7 @@ main {
     
     nav {
         display: flex;
-        padding: 0 2rem;
+        padding: 0 4.5rem;
         justify-content: space-between;
     }
         p {
@@ -131,18 +139,15 @@ main {
             border: none;
             padding: 1rem;
         }
-    main {
+    .flex-container {
         flex-direction: row;
-        margin: 3rem 2em 0 3rem;
+        margin: 0 4rem;
+        padding: 3rem 2em 0 3rem;
         gap: 2rem;
         justify-content: space-between;
     }
         .content {
             width: 75%;
-        }
-        .content,
-        .aside {
-            background-color: aliceblue;
         }
             .content p,
             .content img {
