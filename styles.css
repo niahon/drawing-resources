@@ -16,13 +16,13 @@ html {
 }
 
 h2 {
-    font-size: 28px;
     border-bottom: 2px solid blue;
 }
 
 img {
     margin: 0 auto;
     display: block;
+    max-width: 100%;
 }
 
 body {
@@ -81,6 +81,12 @@ main {
     margin: 1rem 0; 
     }
 
+    .fundamental {
+        margin-bottom: 3rem;
+    }
+        .fundamental h2 {
+            background-color: lightblue;
+        }
     .course {
         margin-top: 3em;
         padding-bottom: 3rem;
@@ -127,11 +133,24 @@ main {
         }
     main {
         flex-direction: row;
-        margin: 3rem 8em;
-        justify-content: space-around;
+        margin: 3rem 2em 0 3rem;
+        gap: 2rem;
+        justify-content: space-between;
     }
         .content {
-            width: 70%;
+            width: 75%;
+        }
+        .content,
+        .aside {
+            background-color: aliceblue;
+        }
+            .content p,
+            .content img {
+                padding-left: 3rem;
+            }
+        .fundamental h2 {
+            padding-left: 1.5rem;
+            margin-top: 1rem;
         }
 
         .fundamental h2,
