@@ -93,7 +93,7 @@ nav {
         .flex-container h3 {
             padding: 0.2rem 0 0.2rem 0.4rem;
         }
-        
+
     .content img {
         padding: 1rem 0.8rem 0.6rem;
 
@@ -110,22 +110,32 @@ nav {
 
     /* courses.html */
 
-    .course {
-        padding: 2rem 0 0;
-    }
-        .course:nth-of-type(odd) img {
-            float: right;
+        .course {
+            padding: 2rem 0 0;
         }
-        .course:nth-of-type(even) img {
-            float: left;
+            .course:nth-of-type(odd) img {
+                float: right;
+            }
+            .course:nth-of-type(even) img {
+                float: left;
+            }
+        .ads {
+            border-top: 1px solid black;
         }
-    .ads {
-        border-top: 1px solid black;
-    }
-        .ads img{
-            margin: 1rem auto;
-        }
+            .ads img{
+                margin: 1rem auto;
+            }
 
+
+    
+    footer {
+        border-top: 1px solid black;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+
+    
 
 @media (min-width: 850px) {
     
@@ -161,8 +171,7 @@ nav {
         .content {
             width: 75%;
         }
-            .content p,
-            .content img {
+            .content p {
                 padding-left: 0.2rem;
             }
 
@@ -174,10 +183,4 @@ nav {
             .aside {
                 border: none;
             }
-   
-
-    footer {
-        border-top: 1px solid black;
-        padding: 1rem;
-    }
 }
