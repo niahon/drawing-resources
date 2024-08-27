@@ -26,6 +26,7 @@ h3 {
 
 img {
     margin: 0 auto;
+    padding-top: 1rem;
     display: block;
     max-width: 100%;
 }
@@ -126,6 +127,20 @@ nav {
                 margin: 1rem auto;
             }
 
+    /* materials.html */
+        .material-list:last-of-type {
+            margin-bottom: 1rem;
+        }
+        .material-list h3 {
+            margin: 2rem 0 0.25rem 0;
+        }
+            .left-container .material-list:first-of-type h3 {
+                margin: 0;
+            }
+        .material-list li {
+            padding-top: 0.25rem;
+            margin-left: 1rem;
+        }
 
     
     footer {
@@ -164,9 +179,8 @@ nav {
     .flex-container {
         flex-direction: row;
         margin: 0 4rem;
-        padding: 3rem 2em 0 3rem;
-        gap: 2rem;
-        justify-content: space-between;
+        padding: 3rem 2em 1rem 3rem;
+        gap: 4rem;
     }
         .content {
             width: 75%;
@@ -183,4 +197,17 @@ nav {
             .aside {
                 border: none;
             }
+        .content.material {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+            .material-list h3 {
+                background-color: transparent;
+            }    
+            .right-container .material-list:first-of-type h3 {
+                margin: 0;
+            }
+
+        
 }
