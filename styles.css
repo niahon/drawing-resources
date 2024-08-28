@@ -129,6 +129,7 @@ nav {
         }
         .review.mini h4 {
             font-size: 14px;
+            margin-bottom: 1rem;
         }
         .review.mini img {
             width: 50%;
